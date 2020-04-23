@@ -18,7 +18,7 @@
 	}
 	if($estado)
 	{
-	echo "user";
+	header("location:ventas.html");
 	}
 	else 
 	{
