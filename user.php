@@ -5,13 +5,13 @@
 	$estado=false;
 
 	$nombre=$_POST['nombre'];
-	$password=$_POST['pass']
+	$password=$_POST['pass'];
 
 	$tam=count($usuario);
 
 	for($x=0; $x<$tam; $x++)
 	{
-	 if($usuario[$x]==$nombre && $pas[$x]==$password)
+	 if($usuario[$x]==$nombre && $pass[$x]==$password)
 	 {
 	 $estado=true;
 	 }
@@ -24,6 +24,5 @@
 	{
 		echo "no user";
 	}
-}
 
 ?>
