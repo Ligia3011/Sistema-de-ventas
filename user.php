@@ -22,7 +22,7 @@
 	}
 	else 
 	{
-		echo "no user";
+	header("location:index.html");
 	}
 
 ?>
