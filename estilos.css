@@ -1,9 +1,28 @@
-body
+  
+h1
 {
-    background-color:lightsalmon;
+    background-color:blanchedalmond;
+    height:50px;
+    width:300px;
+    text-align:center;
 }
-*
-{
-margin:5px; 
-padding:5px;
+#contenedor {
+    background-color: blanchedalmond;
+    width: 300px;
+    margin: 111px auto;
+}
+form {
+    background-color: blanchedalmond;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    color: black;
+    border: 0px groove black;
+    border-top: 50px groove blanchedalmond;
+}
+h1 {
+    background-color: white;
+    height: 50px;
+    width: 300px;
+    text-align: center;
 }

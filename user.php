@@ -1,6 +1,6 @@
 <?php
-	$usuario=array("Ligia","Abby");
-	$pass=array(123,456);
+	$usuario=array("Ligia","Abby","Carlos");
+	$pass=array(123,456,789);
 
 	$estado=false;
 
