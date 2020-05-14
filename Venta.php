@@ -2,6 +2,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <title>ventas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
    <body     background="03.png";>
        <div align="center">
@@ -11,8 +12,11 @@
            
            <br />
        </div>
-       <div>
-           <table>
+         <div class="container">
+            <div class="row justify-content-center">
+                <div class="clo-10 ">
+                    <table class="table table-light">
+
                <tr>
                    <td><strong>Producto</strong></td>
                    <td><strong>Nombre</strong></td>
@@ -76,6 +80,9 @@
                    </td>
                </tr>
            </table>
+           </div>
+           </div>
+       </div>
 
        </div>
 
@@ -84,6 +91,7 @@
  <?php
 if(isset($_GET['producto']))
 {
+
   include('Conexion.php');
                 $con = new Conexion();
                 $producto=$_GET['producto'];
