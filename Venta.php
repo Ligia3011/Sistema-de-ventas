@@ -84,5 +84,15 @@
  <?php
 if(isset($_GET['producto']))
 {
+  include('Conexion.php');
+                $con = new Conexion();
+                $producto=$_GET['producto'];
+                $precio=$_GET['precio'];
+                $query="INSERT INTO `carrito`( `producto`, `precio`) VALUES ('$producto','$precio');";
+                //echo " datos de producto ".$_GET['producto']."--- Precio ".$_GET['precio'];
+                $consulta=$con->query($query);
+                $con->close();
+
+    
 }
 ?>
