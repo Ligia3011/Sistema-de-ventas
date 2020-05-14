@@ -1,0 +1,48 @@
+function img_enlarge(id){
+  var thumb=document.getElementById(id); //console.log(image);
+  $('body').prepend(""+
+  "<div id='zoomedphoto_container'>"+
+    "<div id='zoomedphoto_buttons'>"+
+      "<button id='zoomedphoto_button' onclick=\"img_zoom('-');\">[-] Alejar</button>"+
+      "&nbsp;&nbsp;"+
+      "<button id='zoomedphoto_button' onclick=\"img_zoom('+');\">[+] Acercar</button>"+
+      "&nbsp;&nbsp;"+
+      "<button id='zoomedphoto_button' onclick=\"img_zoom('x');\">[X]</button>"+
+    "</div>"+
+    "<div id='zoomedphoto' class=''>"+
+      "<img id='zoomedphoto_img' src='"+thumb.src+"'>"+
+    "</div></div>");
+  $('#divcontent').hide();
+
+  setTimeout(function(){
+    $('#zoomedphoto_img').attr('data-orig_w',$('#zoomedphoto_img').width());
+    $('#zoomedphoto_img').attr('data-orig_h',$('#zoomedphoto_img').height());
+  },500);
+
+  var image=document.getElementById('zoomedphoto_img'); //console.log(image);
+
+  image.addEventListener('gesturechange',function(e){ //console.log(e);
+    if(e.scale>1){img_zoom('+');}else if(e.scale<1){img_zoom('-');}
+  });
+
+}
+
+function img_zoom(o){
+  var curr_w=$('#zoomedphoto_img').width(),curr_h=$('#zoomedphoto_img').height(),
+      orig_w=$('#zoomedphoto_img').attr('data-orig_w'),orig_h=$('#zoomedphoto_img').attr('data-orig_h');
+
+  switch(o){
+    case "-": var new_w=curr_w*0.95,new_h=curr_h*0.95; break;
+    case "+": var new_w=curr_w*1.05,new_h=curr_h*1.05; break;
+    case "x":
+      $('#zoomedphoto_container').remove();
+      $('#divcontent').show();
+      return;
+    break;
+  }
+
+  if(new_w<orig_w || new_h<orig_h){new_w=orig_w; new_h=orig_h;}
+  if(new_w>(orig_w*3) || new_h>(orig_h*3)){new_w=curr_w; new_h=curr_h;}
+
+  $('#zoomedphoto_img').width(new_w).height(new_h);
+}
