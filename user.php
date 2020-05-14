@@ -18,7 +18,7 @@
 	}
 	if($estado)
 	{
-	header("location:ventas.html");
+	header("location:Venta.php");
 	}
 	else 
 	{

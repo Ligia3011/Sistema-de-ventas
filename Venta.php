@@ -1,4 +1,4 @@
-<html>
+<!doctype html>
 <head>
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <title>ventas</title>
@@ -60,5 +60,11 @@
            </table>
 
        </div>
-</body>
-</html>
+
+      </body>
+   </html>
+ <?php
+if(isset($_GET['producto']))
+echo "datos del producto ".$_GET['producto']."------precio".$_GET['precio'];
+}
+?>
