@@ -28,7 +28,7 @@
                    <td>Serum Dior</td>
                    <td>Q.1600</td>
                    <td>
-                   <a href="?producto=Serum Dior&precio=1600">comprar</a>
+                   <a href="?producto=SerumDior&precio=1600">Añadir</a>
                    </td>
                </tr>
                <tr>
@@ -36,7 +36,7 @@
                    <td>Bolso Dior</td>
                    <td>Q.3000</td>
                    <td>
-                   <a href="?producto=BolsoDior&precio=3000">comprar</a>
+                   <a href="?producto=BolsoDior&precio=3000">Añadir</a>
                    </td>
                </tr>
                <tr>
@@ -44,7 +44,7 @@
                    <td>Brazalete petit CDior</td>
                    <td>Q.2500</td>
                    <td>
-                   <a href="?producto=Brazaletepetit&precio=2500">comprar</a>
+                   <a href="?producto=Brazaletepetit&precio=2500">Añadir</a>
                    </td>
                </tr>
                <tr>
@@ -52,7 +52,7 @@
                    <td>Vestido CDior</td>
                    <td>Q.6500</td>
                    <td>
-                   <a href="?producto=VestidoCDior&precio=6500">comprar</a>
+                   <a href="?producto=VestidoCDior&precio=6500">Añadir</a>
                    </td>
                </tr>
                <tr>
@@ -60,7 +60,7 @@
                    <td>Shoes CD</td>
                    <td>Q.8000</td>
                    <td>
-                   <a href="?producto=ShoesDiorOblique&precio=8000">comprar</a>
+                   <a href="?producto=ShoesDiorOblique&precio=8000">Añadir</a>
                    </td>
                </tr>
                <tr>
@@ -68,7 +68,7 @@
                    <td>Sandalias de tacón JAdior</td>
                    <td>Q.6500</td>
                    <td>
-                   <a href="?producto=SandaliasdetacónJAdior&precio=6500">comprar</a>
+                   <a href="?producto=SandaliasdetacónJAdior&precio=6500">Añadir al carrito</a>
                    </td>
                </tr>
                <tr>
@@ -76,7 +76,7 @@
                    <td>Sandalias de salon JAdior</td>
                    <td>Q.6500</td>
                    <td>
-                   <a href="?producto=>SandaliasdesalonJAdior&precio=6500">comprar</a>
+                   <a href="?producto=>SandaliasdesalonJAdior&precio=6500">Añadir al carrito</a>
                    </td>
                </tr>
            </table>
