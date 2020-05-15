@@ -105,3 +105,24 @@ if(isset($_GET['producto']))
     
 }
 ?>
+<?php
+                         
+                         $con = new Conexion();
+                        $query="SELECT * FROM `carrito` WHERE 1;";
+                        $pro=$con->query($query);
+                        $con->close();
+                       
+                        while($row=mysqli_fetch_assoc($pro))
+                        {
+                            echo "
+                                <tr>
+                                    <td>
+                                        <p>".$row['producto']."</p>
+                                    </td>
+                                    <td>
+                                        <p>".$row['precio']."</p>
+                                    </td>
+                                </tr>
+                            ";
+                        }
+?>
