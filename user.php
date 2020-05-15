@@ -8,10 +8,10 @@ $usuario=$con->query($query);
 $con->close();
 if($usuario->num_rows==1)
 {
-header("location:ventas.php");
+  header("location:Venta.php");
 }
 else 
 {
-header("location:index.html");
-    }
+  header("location:index.html");
+}
 ?>
